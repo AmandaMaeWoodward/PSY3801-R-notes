@@ -1,0 +1,18 @@
+Data: 
+
+```{r}
+preTraining<- c(2,3,3,4)
+postTraining<- c(4,7,5,6)
+luminosityDat<- cbind.data.frame(preTraining,postTraining)
+```
+
+
+```{r}
+t.test(luminosityDat$preTraining, luminosityDat$postTraining, paired=TRUE)
+```
+
+```{r}
+library(effsize)
+cohen.d(luminosityDat$preTraining, luminosityDat$postTraining, paired=TRUE)
+```
+
