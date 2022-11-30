@@ -22,3 +22,20 @@ r ≤ 0
 #### Alternative hypothesis: 
 There is a positive relationship between enjoying winter outdoor activities and liking winter
 r>0
+
+### Step 2: Choosing statistic 
+correlation- we're interested in the linear relationship between these variables
+
+### Step 3: Gather data; and set critical area
+
+0.05; due to convention 
+data collected from Google form in class 
+
+### Step 4: Calculating Statistic
+`cor.test()` gives u an associated p value with our correlation value
+`cor.test(xvariable, y variable, alternative= "greater"/"less"/"two.sided")`
+```{r}
+cor.test(winterDat$`How much do you like winter? (1 = not at all; 15 = a lot!)`, winterDat$`how much do you like outdoor winter activities? (0 = staying by the fire inside ; 10= outside all winter!)`, alternative ="greater")
+```
+
+###Step 5: Draw a conclusion 
