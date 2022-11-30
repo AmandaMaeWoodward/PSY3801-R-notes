@@ -4,4 +4,21 @@ author: "Amanda Mae Woodward"
 date: "2022-11-30"
 output: html_document
 ---
+```{r}
+library(readxl)
+winterDat <- read_excel("~/Desktop/PSY4960-Fall2022/PSY4960- In Class Notes/PSY3801-Correlation example.xlsx")
+```
 
+
+# Research Question 
+ 
+## More specific research question: Does enjoying outdoor winter activities have a positive relationship with liking winter?
+
+### Step 1: Write out our hypotheses
+
+#### Null Hypothesis: 
+There is not a positive relationship between enjoying winter outdoor activities and liking winter 
+r ≤ 0
+#### Alternative hypothesis: 
+There is a positive relationship between enjoying winter outdoor activities and liking winter
+r>0
